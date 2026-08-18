@@ -17,6 +17,43 @@
         <main>
             <p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday To Friday</p>
             <p>Check Blackboard for when CWA tutors will be there.</p>
+
+            <fieldset>
+                    <legend>Student Details</legend>
+                    <p>
+                        <label for="studentID">Student ID</label>
+                        <input type="text" name="studentID" id="studentID" pattern="\d{7,10}" required="required" minlength="7" maxlength="10"/>
+                    </p>
+                    <p>
+                        <label for="givenName">Given Name</label>
+                        <input type="text" name="givenName" id="givenName" pattern="[A-Za-z]{1,15}" required="required" maxlength="15"/>
+                        
+                         <label for="familyName">Family Name</label>
+                        <input type="text" name="familyName" id="familyName" pattern="[A-Za-z]{1,15}" required="required" maxlength="15"/>
+                    </p>
+            </fieldset>
+
+              <fieldset>
+                    <legend>Your unit</legend>
+                    <p>
+                        <label for="studentID">a</label>
+                        <input type="text" name="studentID" id="studentID" pattern="\d{7,10}" required="required" minlength="7" maxlength="10"/>
+                    </p>
+                    <p>
+                        <label for="yourTutor">Your Tutor</label>
+                        <select name="yourTutor" id="yourTutor" required="required">
+                            <option value="">Please Select</option>
+                            <option value="tutorOne">tutorNameOne</option>
+                            <option value="tutorTwo">tutorNameTwo</option>
+                            <option value="tutorThree">tutorNameThree</option>
+                            <option value="tutorFour">tutorNameFour</option>
+                            <option value="tutorFive">tutorNameFive</option>
+                            <option value="tutorSix">tutorNameSix</option>
+                            <option value="tutorSeven">tutorNameSeven</option>
+                       </select>
+                    </p>
+            </fieldset>
+
         </main>
 
 
