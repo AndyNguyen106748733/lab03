@@ -33,26 +33,32 @@
                     </p>
             </fieldset>
 
-              <fieldset>
-                    <legend>Your unit</legend>
-                    <p>
-                        <label for="studentID">a</label>
-                        <input type="text" name="studentID" id="studentID" pattern="\d{7,10}" required="required" minlength="7" maxlength="10"/>
-                    </p>
-                    <p>
-                        <label for="yourTutor">Your Tutor</label>
-                        <select name="yourTutor" id="yourTutor" required="required">
-                            <option value="">Please Select</option>
-                            <option value="tutorOne">tutorNameOne</option>
-                            <option value="tutorTwo">tutorNameTwo</option>
-                            <option value="tutorThree">tutorNameThree</option>
-                            <option value="tutorFour">tutorNameFour</option>
-                            <option value="tutorFive">tutorNameFive</option>
-                            <option value="tutorSix">tutorNameSix</option>
-                            <option value="tutorSeven">tutorNameSeven</option>
-                       </select>
-                    </p>
-            </fieldset>
+            <fieldset>
+                <legend>Your unit</legend>
+                <p>
+                    <input type="radio" name="unitCourseID" id="COS10011" required="required"/>
+                    <label for="COS10011">COS10011</label>
+
+                    <input type="radio" name="unitCourseID" id="COS60004" required="required"/>
+                    <label for="COS60004">COS60004</label>
+
+                    <input type="radio" name="unitCourseID" id="COS60007" required="required"/>
+                    <label for="COS60007">COS60007</label>
+                </p>
+                <p>
+                    <label for="yourTutor">Your Tutor</label>
+                    <select name="yourTutor" id="yourTutor" required="required">
+                        <option value="">Please Select</option>
+                        <option value="tutorOne">tutorNameOne</option>
+                        <option value="tutorTwo">tutorNameTwo</option>
+                        <option value="tutorThree">tutorNameThree</option>
+                        <option value="tutorFour">tutorNameFour</option>
+                        <option value="tutorFive">tutorNameFive</option>
+                        <option value="tutorSix">tutorNameSix</option>
+                        <option value="tutorSeven">tutorNameSeven</option>
+                    </select>
+                </p>
+        </fieldset>
 
         </main>
 
