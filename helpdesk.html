@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <!-- Contains the meta data -->
+    <head> 
         <meta charset="UTF-8">
         <meta name="author" content="Andy Nguyen">
         <meta name="keywords" content="HTML, CSS, web development">
@@ -15,10 +16,12 @@
         </header>
 
         <main>
+            <!--  -->
             <p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday To Friday</p>
             <p>Check Blackboard for when CWA tutors will be there.</p>
             
-            <form action="submit.php" method="GET">
+            <!-- New form decleration, gets the users data with the method "POST" on submission button and sends it to the server -->
+            <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="POST">
                 <fieldset>
                     <legend>Student Details</legend>
                     <p>
@@ -35,6 +38,7 @@
                 </fieldset>
 
                 <fieldset>
+                    <!-- New fieldset to select unit, utilizes radio buttons -->
                     <legend>Your unit</legend>
                     <p>
                         <input type="radio" name="unitCourseID" id="COS10011" required="required">
@@ -62,6 +66,7 @@
                 </fieldset>
 
                 <fieldset>
+                    <!-- New fieldset decleration for the user to type their issue description -->
                     <legend>Issue</legend>
                     <p>
                         <label for="HTML">HTML</label>
@@ -97,7 +102,7 @@
                         <input type="text" id="Time" placeholder="00:00" required="required" pattern="[0-9]{2}:[0-9]{2}">
                     </p>
                 </fieldset>
-
+                <!-- Submits the data to the server, or resets the form -->
                 <input type="submit" value="Book">
                 <input type="reset" value="Reset form">
             </form>
